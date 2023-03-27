@@ -1,207 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8">
-    <title>Site Links</title>
-    <meta name="theme-color" content="#3D4356">
-    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
-  <link href="assets/css/app.css?v=1657270575639" rel="stylesheet"></head>
-  <body>
-<div class="preloader">
-  <div class="preloader-logo"><img src="assets/images/png/logo.png" alt=""></div>
-  <div class="preloader-line">
-    <div class="preloader-loading"></div>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title>Site Links</title>
+  <meta name="theme-color" content="#3D4356">
+  <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  <link href="assets/css/app.css?v=1657270575639" rel="stylesheet">
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader-logo"><img src="assets/images/png/logo.png" alt=""></div>
+    <div class="preloader-line">
+      <div class="preloader-loading"></div>
+    </div>
   </div>
-</div>
-<script>
-  let preloader = document.querySelector('.preloader');
-  
-  if (!(document.referrer.indexOf("embryo") == -1) || !(location.href.indexOf('localhost') == -1)) {
-    preloader.remove();
-  }
-  
-  document.addEventListener('DOMContentLoaded', function(){
-  
-  
-    if (preloader) {
-      setTimeout(function () {
-        preloader.classList.add('preloader--hide');
-      }, window.PRELOADER_DELAY - 1800 );
-  
-      setTimeout(function () {
-        preloader.style.display = 'none';
-      }, window.PRELOADER_DELAY );
+  <script>
+    let preloader = document.querySelector('.preloader');
+
+    if (!(document.referrer.indexOf("embryo") == -1) || !(location.href.indexOf('localhost') == -1)) {
+      preloader.remove();
     }
-  });
-</script>
-<header class="header">
-  <div class="center-wrap">
-    <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="index.html#home">
-        <div><img class="mobile--hide" src="assets/images/png/logo.png" alt=""><img class="desktop--hide" src="assets/images/png/logo-mob.png" alt=""></div></a>
-      <nav class="header__nav mobile--hide">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a class="header__nav-link" href="/">Test</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="/">Team</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="/">Blog</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="/">Contact us</a></li>
-        </ul>
-      </nav><a class="header__btn btn mobile--hide" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a><a class="header__btn btn btn--empty mobile--hide" href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
-      <div class="header__lang mobile--hide"><a class="header__lang-item header__lang-item--active" href="">EN</a><a class="header__lang-item" href="">EN</a></div>
-      <div class="header__burger desktop--hide">
-        <div></div>
-        <div></div>
-        <div></div>
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+
+      if (preloader) {
+        setTimeout(function () {
+          preloader.classList.add('preloader--hide');
+        }, window.PRELOADER_DELAY - 1800);
+
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, window.PRELOADER_DELAY);
+      }
+    });
+  </script>
+  <header class="header">
+    <div class="center-wrap">
+      <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+          <div><img class="mobile--hide" src="assets/images/png/logo.png" alt=""><img class="desktop--hide"
+              src="assets/images/png/logo-mob.png" alt=""></div>
+        </a>
+        <nav class="header__nav mobile--hide">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="/">Test</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="/">Team</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="/">Blog</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="/">Contact us</a></li>
+          </ul>
+        </nav><a class="header__btn btn mobile--hide" href="http://genembryomics.elisedge.com/patient/"
+          target="_blank">Order test</a><a class="header__btn btn btn--empty mobile--hide"
+          href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
+        <div class="header__lang mobile--hide"><a class="header__lang-item header__lang-item--active" href="">EN</a><a
+            class="header__lang-item" href="">EN</a></div>
+        <div class="header__burger desktop--hide">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="scrollbar">
+    <main>
+      <div class="center-wrap">
+        <div class="site-links">
+          <div class="site-links__site">
+            <h1 class="simple-title simple-title--center">SITE LINKS</h1>
+            <div class="site-links__subtitle">This page was created at the time of the developer, for the purpose of
+              easy navigation. It will be removed after the site is stretched.</div>
+            <ul class="site-links__list">
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/home.html"
+                  target="_blank">Homepage</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/stages.html"
+                  target="_blank">Test</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/specialists.html"
+                  target="_blank">Team </a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/sequencing.html"
+                  target="_blank">Media</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/price.html" target="_blank">Media
+                  1</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/сontact.html"
+                  target="_blank">Contact Us</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/terms.html" target="_blank">Terms
+                  of Use</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/privacy.html"
+                  target="_blank">Privacy policy</a></li>
+              <li class="site-links__item"><a class="site-links__link" href="/embryo/404.html" target="_blank">404</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="cookie" style="visibility:hidden;">
+    <div class="cookie__content content">
+      <p>We use cookies to improve user experience</p>
+    </div>
+    <div class="cookie__btn btn btn--empty">Accept cookies</div>
+  </div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrap">
+      <div class="mobile-menu__left">
+        <div class="mobile-menu__act mobile-menu__act--close">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="7" y="7" width="22" height="20" fill="white"></rect>
+            <path
+              d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z"
+              fill="#F45B69"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="mobile-menu__right">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Test</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Team</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contact us</a></li>
+          </ul>
+        </nav><a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a>
+        <div class="mobile-menu__bottom"><a class="btn btn--emptya"
+            href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
+          <div class="header__lang"><a class="header__lang-item header__lang-item--active" href="">EN</a><a
+              class="header__lang-item" href="">EN</a></div>
+        </div>
       </div>
     </div>
   </div>
-</header>
-    <div id="scrollbar">
-      <main>
-        <div class="center-wrap">
-          <div class="site-links">
-            <div class="site-links__site">
-              <h1 class="simple-title simple-title--center">SITE LINKS</h1>
-              <div class="site-links__subtitle">This page was created at the time of the developer, for the purpose of easy navigation. It will be removed after the site is stretched.</div>
-              <ul class="site-links__list">
-                <li class="site-links__item"><a class="site-links__link" href="/home.html" target="_blank">Homepage</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/stages.html" target="_blank">Test</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/specialists.html" target="_blank">Team </a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/sequencing.html" target="_blank">Media</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/price.html" target="_blank">Media 1</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/сontact.html" target="_blank">Contact Us</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/terms.html" target="_blank">Terms of Use</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/privacy.html" target="_blank">Privacy policy</a></li>
-                <li class="site-links__item"><a class="site-links__link" href="/404.html" target="_blank">404</a></li>
-              </ul>
-            </div>
-          </div>
+  <div class="popup-wrap" id="thank-you">
+    <div class="popup">
+      <div class="popup__close" onclick="close_popup('thank-you')">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="popup__inner">
+        <div class="popup__simple-title simple-title">Спасибо!</div>
+        <div class="popup__content content">
+          <p>Ваша заявка успешно отправлена.</p>
         </div>
-      </main>
+      </div>
     </div>
-<div class="cookie" style="visibility:hidden;">
-  <div class="cookie__content content"> 
-    <p>We use cookies to improve user experience</p>
   </div>
-  <div class="cookie__btn btn btn--empty">Accept cookies</div>
-</div>
-<div class="mobile-menu">
-  <div class="mobile-menu__wrap">
-    <div class="mobile-menu__left">
-      <div class="mobile-menu__act mobile-menu__act--close">
+  <div class="popup-wrap" id="callback">
+    <div class="popup">
+      <div class="popup__close" onclick="close_popup('callback')">
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="7" y="7" width="22" height="20" fill="white"></rect>
-          <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z" fill="#F45B69"></path>
+          <path
+            d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z">
+          </path>
         </svg>
       </div>
-    </div>
-    <div class="mobile-menu__right">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__nav-list">
-          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Test</a></li>
-          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Team</a></li>
-          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
-          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contact us</a></li>
-        </ul>
-      </nav><a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a>
-      <div class="mobile-menu__bottom"><a class="btn btn--emptya" href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
-        <div class="header__lang"><a class="header__lang-item header__lang-item--active" href="">EN</a><a class="header__lang-item" href="">EN</a></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="popup-wrap" id="thank-you">
-  <div class="popup">
-    <div class="popup__close" onclick="close_popup('thank-you')">
-      <div></div>
-      <div></div>
-    </div>
-    <div class="popup__inner">
-      <div class="popup__simple-title simple-title">Спасибо!</div>
-      <div class="popup__content content"> 
-        <p>Ваша заявка успешно отправлена.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="popup-wrap" id="callback">
-  <div class="popup">
-    <div class="popup__close" onclick="close_popup('callback')">
-      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="7" y="7" width="22" height="20" fill="white"></rect>
-        <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z"></path>
-      </svg>
-    </div>
-    <div class="popup__inner">
-      <div class="popup__simple-title simple-title">Callback form</div>
-      <form class="inputs" action="/action_page.php" autocomplete="off">
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
-          <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
-        </div>
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
-          <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
-        </div>
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="number" autocomplete="off" required="">
-          <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
-        </div>
-        <div class="inputs__field-wrap inputs__field-wrap--textarea inputs__field-wrap--top">
-          <textarea class="inputs__field" name="textarea" required></textarea>
-          <label class="inputs__label"><span class="inputs__content">Type in your comments...</span></label>
-        </div>
-        <div class="inputs__btn">
-          <button class="btn" type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<div class="popup-wrap" id="submit">
-  <div class="popup">
-    <div class="popup__close" onclick="close_popup('submit')">
-      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="7" y="7" width="22" height="20" fill="white"></rect>
-        <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z"></path>
-      </svg>
-    </div>
-    <div class="popup__inner">
-      <div class="popup__simple-title popup__simple-title--mb simple-title">Please submit the form to order your IVF embryo genome screening test</div>
-      <form class="inputs" action="/action_page.php" autocomplete="off">
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
-          <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
-        </div>
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
-          <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
-        </div>
-        <div class="inputs__field-wrap">
-          <input class="inputs__field" type="number" autocomplete="off" required="">
-          <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
-        </div>
-        <div class="popup__bottom">
-          <div class="popup__price"> 
-            <div class="popup__price-new">500$</div>
-            <div class="popup__price-old desktop--hide">700$</div>
+      <div class="popup__inner">
+        <div class="popup__simple-title simple-title">Callback form</div>
+        <form class="inputs" action="/action_page.php" autocomplete="off">
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+            <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
+          </div>
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+            <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
+          </div>
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="number" autocomplete="off" required="">
+            <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
+          </div>
+          <div class="inputs__field-wrap inputs__field-wrap--textarea inputs__field-wrap--top">
+            <textarea class="inputs__field" name="textarea" required></textarea>
+            <label class="inputs__label"><span class="inputs__content">Type in your comments...</span></label>
           </div>
           <div class="inputs__btn">
-            <button class="btn" type="submit">Order test</button>
+            <button class="btn" type="submit">Submit</button>
           </div>
-        </div>
-        <div class="popup__content content"> 
-          <p>Our staff will contact you as soon as possible to provide you with all needed information.</p>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
-</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-  <script src="js/app.js?v=1657270575210"></script></body>
+  <div class="popup-wrap" id="submit">
+    <div class="popup">
+      <div class="popup__close" onclick="close_popup('submit')">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="7" width="22" height="20" fill="white"></rect>
+          <path
+            d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z">
+          </path>
+        </svg>
+      </div>
+      <div class="popup__inner">
+        <div class="popup__simple-title popup__simple-title--mb simple-title">Please submit the form to order your IVF
+          embryo genome screening test</div>
+        <form class="inputs" action="/action_page.php" autocomplete="off">
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+            <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
+          </div>
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+            <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
+          </div>
+          <div class="inputs__field-wrap">
+            <input class="inputs__field" type="number" autocomplete="off" required="">
+            <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
+          </div>
+          <div class="popup__bottom">
+            <div class="popup__price">
+              <div class="popup__price-new">500$</div>
+              <div class="popup__price-old desktop--hide">700$</div>
+            </div>
+            <div class="inputs__btn">
+              <button class="btn" type="submit">Order test</button>
+            </div>
+          </div>
+          <div class="popup__content content">
+            <p>Our staff will contact you as soon as possible to provide you with all needed information.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1657270575210"></script>
+</body>
+
 </html>
