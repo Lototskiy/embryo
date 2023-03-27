@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>Embryomics</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  <link href="assets/css/app.css?v=1657270575639" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/png/logo.png" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  
+  if (!(document.referrer.indexOf("embryo") == -1) || !(location.href.indexOf('localhost') == -1)) {
+    preloader.remove();
+  }
+  
+  document.addEventListener('DOMContentLoaded', function(){
+  
+  
+    if (preloader) {
+      setTimeout(function () {
+        preloader.classList.add('preloader--hide');
+      }, window.PRELOADER_DELAY - 1800 );
+  
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, window.PRELOADER_DELAY );
+    }
+  });
+</script>
+<header class="header">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+        <div><img class="mobile--hide" src="assets/images/png/logo.png" alt=""><img class="desktop--hide" src="assets/images/png/logo-mob.png" alt=""></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Test</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Team</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Blog</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Contact us</a></li>
+        </ul>
+      </nav><a class="header__btn btn mobile--hide" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a><a class="header__btn btn btn--empty mobile--hide" href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
+      <div class="header__lang mobile--hide"><a class="header__lang-item header__lang-item--active" href="">EN</a><a class="header__lang-item" href="">EN</a></div>
+      <div class="header__burger desktop--hide">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div id="scrollbar">
+      <main>
+<section class="main-screen" id="home">
+  <div class="center-wrap at-block">
+    <div class="main-screen__wrap"> 
+      <div class="main-screen__left">
+        <h1 class="main-screen__simple-title simple-title at-element" data-at-name="atTitle">Embryo genome<br> sequencing for IVF</h1>
+        <div class="main-screen__content content at-element" data-at-name="atText">
+          <p>We are the only company that offers a comprehensive whole-genome sequencing screening test for your IVF embryos.</p>
+          <p>Order <i>GenomeScreen</i>™ through your IVF provider <br> or click the button below.</p>
+        </div>
+        <div class="main-screen__btn"><a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a></div>
+        <div class="main-screen__down mobile--hide"><a class="scroll-down single-anchors" href="desires">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 34C15.3478 34 12.8043 32.9464 10.9289 31.0711C9.05357 29.1957 8 26.6522 8 24V12C8 9.34784 9.05357 6.8043 10.9289 4.92893C12.8043 3.05357 15.3478 2 18 2C20.6522 2 23.1957 3.05357 25.0711 4.92893C26.9464 6.8043 28 9.34784 28 12V24C28 25.3132 27.7413 26.6136 27.2388 27.8268C26.7362 29.0401 25.9997 30.1425 25.0711 31.0711C24.1425 31.9997 23.0401 32.7362 21.8268 33.2388C20.6136 33.7413 19.3132 34 18 34ZM18 4C15.8783 4 13.8434 4.84285 12.3431 6.34315C10.8429 7.84344 10 9.87827 10 12V24C10 26.1217 10.8429 28.1566 12.3431 29.6569C13.8434 31.1571 15.8783 32 18 32C20.1217 32 22.1566 31.1571 23.6569 29.6569C25.1571 28.1566 26 26.1217 26 24V12C26 9.87827 25.1571 7.84344 23.6569 6.34315C22.1566 4.84285 20.1217 4 18 4Z" fill="#114B5F"></path>
+              <path d="M18 15C17.7348 15 17.4804 14.8946 17.2929 14.7071C17.1054 14.5196 17 14.2652 17 14V10C17 9.73478 17.1054 9.48043 17.2929 9.29289C17.4804 9.10536 17.7348 9 18 9C18.2652 9 18.5196 9.10536 18.7071 9.29289C18.8946 9.48043 19 9.73478 19 10V14C19 14.2652 18.8946 14.5196 18.7071 14.7071C18.5196 14.8946 18.2652 15 18 15Z" fill="#114B5F"></path>
+            </svg>
+            <div class="scroll-down__scrolldown">
+              <div class="scroll-down__line"></div>
+            </div></a></div>
+      </div>
+      <div class="main-screen__right">
+        <div class="main-screen__bg">
+          <div class="main-screen__bg-wrap">
+            <div class="main-screen__bg-line main-screen__bg-line1"></div>
+            <div class="main-screen__bg-line main-screen__bg-line2"></div>
+            <div class="main-screen__bg-line main-screen__bg-line3 mobile--hide"></div>
+            <div class="main-screen__bg-circle"></div>
+            <div class="main-screen__img img-wrap">
+              <div>
+                <picture>
+                  <source srcset="assets/images/png/Subtract-mob.png" media="(max-width: 480px)"><img src="assets/images/png/Subtract.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="desires" id="desires">
+  <div class="center-wrap at-block">
+    <div class="desires__wrap"> 
+      <div class="desires__left mobile--hide"><img class="desires__left-img" src="assets/images/png/desires-decor.png" alt=""></div>
+      <div class="desires__right">
+        <h2 class="desires__simple-title simple-title at-element" data-at-name="atTitle">Every family wants their<br> children to be happy and healthy</h2>
+        <div class="desires__content content text-animation at-element" data-at-name="atText">
+          <p>We provide actionable whole genome sequencing and<br> interpretation of your embryos genomes so that you<br> make informed decisions for the future of your family</p>
+        </div>
+        <div class="desires__img desires__img--13 img-wrap at-element" data-at-name="atDesires" data-at-custom="true">
+          <div>
+            <picture><img src="assets/images/png/desires-img1.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="desires__img desires__img--9 img-wrap">
+          <div>
+            <picture><img src="assets/images/png/desires-img2.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="desires__img desires__img--21 img-wrap img-parallax mobile--hide at-elements" data-at-group="1">
+          <div>
+            <picture><img src="assets/images/png/desires-img3.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="desires__img desires__img--19 img-wrap">
+          <div>
+            <picture><img src="assets/images/png/desires-img4.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="desires__img desires__img--14 img-wrap img-parallax mobile--hide">
+          <div>
+            <picture><img src="assets/images/png/desires-img5.png" alt=""></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="advantages">
+  <div class="center-wrap at-block">
+    <h2 class="advantages__simple-title simple-title at-element" data-at-name="atTitle">Advantages of whole genome<br> sequencing for your IVF cycle</h2>
+    <div class="advantages__list at-element" data-at-name="atItems" data-at-custom="true">
+      <div class="advantages__item"> 
+        <div class="advantages__item-left img-wrap">
+          <div>
+            <picture><img src="assets/images/png/advantages-img1.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="advantages__item-right"> 
+          <div class="advantages__item-title">Embryo genome screening coverage</div>
+          <div class="advantages__item-content content"> 
+            <p>SNPs, insertions &amp; deletions, copy number variations, mosaicism and chromosome aneuploidies</p>
+          </div>
+        </div>
+      </div>
+      <div class="advantages__item"> 
+        <div class="advantages__item-left img-wrap">
+          <div>
+            <picture><img src="assets/images/png/advantages-img2.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="advantages__item-right"> 
+          <div class="advantages__item-title">Parent to child screening﻿</div>
+          <div class="advantages__item-content content"> 
+            <p>We screen transmitted variants from the embryos parents with an accuracy of &gt;99.9%</p>
+          </div>
+        </div>
+      </div>
+      <div class="advantages__item"> 
+        <div class="advantages__item-left img-wrap">
+          <div>
+            <picture><img src="assets/images/png/advantages-img3.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="advantages__item-right"> 
+          <div class="advantages__item-title">De novo<br> mutations</div>
+          <div class="advantages__item-content content"> 
+            <p>New mutations introduced at fertilisation are detected and graded for screening (&gt;95.1% accuracy)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages__btn"> <a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a></div>
+  </div>
+</section>
+<div class="step">
+  <div class="center-wrap at-block">
+    <div class="step__list at-element" data-at-name="atItems2" data-at-custom="true"> 
+      <div class="step__item"> 
+        <div class="step__item-top"> 
+          <div class="step__item-img img-wrap">
+            <div><img src="assets/images/svg/step-img2.svg" alt=""></div>
+          </div>
+          <div class="step__item-decor img-wrap">
+            <div><img src="assets/images/svg/step-decor.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="step__item-title">Step 1</div>
+        <div class="step__item-content content"> 
+          <p>Whole-genome screening with GenomeScreen™ in the GenEmbryomics patient portal will allow you to provide your doctors information who can arrange for DNA sample collection.</p>
+        </div>
+      </div>
+      <div class="step__item"> 
+        <div class="step__item-top"> 
+          <div class="step__item-img img-wrap">
+            <div><img src="assets/images/svg/step-img3.svg" alt=""></div>
+          </div>
+          <div class="step__item-decor img-wrap">
+            <div><img src="assets/images/svg/step-decor.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="step__item-title">Step 2</div>
+        <div class="step__item-content content"> 
+          <p>The embryos genome sequence is analysed to determine if they carry any damaging mutations that may be threatening their health. </p>
+        </div>
+      </div>
+      <div class="step__item"> 
+        <div class="step__item-top"> 
+          <div class="step__item-img img-wrap">
+            <div><img src="assets/images/svg/step-img4.svg" alt=""></div>
+          </div>
+          <div class="step__item-decor img-wrap">
+            <div><img src="assets/images/svg/step-decor.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="step__item-title">Step 3</div>
+        <div class="step__item-content content"> 
+          <p>The GenomeScreen™ report is a summary of all the genetic data related to disease, and it offers guidance for the future health of your embryos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="step__btn"> <a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a></div>
+  </div>
+</div>
+<section class="experts">
+  <div class="center-wrap at-block">
+    <div class="experts__top"> 
+      <h2 class="experts__simple-title simple-title at-element" data-at-name="atTitle">Experts opinion</h2>
+      <div class="experts__button slider-btn mobile--hide">
+        <div class="swiper-button-prev slider-btn__prev">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9997 0.333496C6.89967 0.333496 0.333008 6.90016 0.333008 15.0002C0.333008 23.1002 6.89967 29.6668 14.9997 29.6668C23.0997 29.6668 29.6663 23.1002 29.6663 15.0002C29.6663 6.90016 23.0997 0.333496 14.9997 0.333496ZM17.9423 10.6095C18.1852 10.358 18.3196 10.0212 18.3166 9.67163C18.3135 9.32203 18.1733 8.98762 17.9261 8.74041C17.6789 8.49319 17.3445 8.35297 16.9949 8.34993C16.6453 8.34689 16.3085 8.48129 16.057 8.72416L10.7237 14.0575C10.4737 14.3075 10.3333 14.6466 10.3333 15.0002C10.3333 15.3537 10.4737 15.6928 10.7237 15.9428L16.057 21.2762C16.3085 21.519 16.6453 21.6534 16.9949 21.6504C17.3445 21.6474 17.6789 21.5071 17.9261 21.2599C18.1733 21.0127 18.3135 20.6783 18.3166 20.3287C18.3196 19.9791 18.1852 19.6423 17.9423 19.3908L13.5517 15.0002L17.9423 10.6095Z"></path>
+          </svg>
+        </div>
+        <div class="swiper-button-next slider-btn__next">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0003 29.6665C23.1003 29.6665 29.667 23.0998 29.667 14.9998C29.667 6.89984 23.1003 0.333171 15.0003 0.333171C6.90032 0.333172 0.333656 6.89984 0.333657 14.9998C0.333658 23.0998 6.90033 29.6665 15.0003 29.6665ZM12.0577 19.3905C11.8148 19.642 11.6804 19.9788 11.6834 20.3284C11.6865 20.678 11.8267 21.0124 12.0739 21.2596C12.3211 21.5068 12.6555 21.647 13.0051 21.6501C13.3547 21.6531 13.6915 21.5187 13.943 21.2758L19.2763 15.9425C19.5263 15.6925 19.6667 15.3534 19.6667 14.9998C19.6667 14.6463 19.5263 14.3072 19.2763 14.0572L13.943 8.72384C13.6915 8.48096 13.3547 8.34657 13.0051 8.34961C12.6555 8.35264 12.3211 8.49287 12.0739 8.74008C11.8267 8.98729 11.6865 9.32171 11.6834 9.6713C11.6804 10.0209 11.8148 10.3577 12.0577 10.6092L16.4483 14.9998L12.0577 19.3905Z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="experts-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>Testing for all known genetic conditions can give couples more information and choices, in turn reducing their chance of having a child with a seriously debilitating, life-limiting genetic condition.</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo2.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Prof. David Amor</div>
+                  <div class="experts-slider__bottom-posit">PhD University of Melbourne</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>This is a profoundly exciting discovery in assistive reproductive technology that has far reaching implications for couples looking for answers to the reason for their subfertity and their child’s health.</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo3.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Phd, Santiago Munne</div>
+                  <div class="experts-slider__bottom-posit">Overture Life Inc.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>Whole genome sequencing of IVF embryos with GenEmbryomics' Panacea GenomeScreen™ is the most advanced IVF embryo laboratory test ever developed"</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo4.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Dr. Nick Murphy</div>
+                  <div class="experts-slider__bottom-posit">PhD University of Melbourne</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>Testing for all known genetic conditions can give couples more information and choices, in turn reducing their chance of having a child with a seriously debilitating, life-limiting genetic condition.</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo2.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Prof. David Amor</div>
+                  <div class="experts-slider__bottom-posit">PhD University of Melbourne</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>This is a profoundly exciting discovery in assistive reproductive technology that has far reaching implications for couples looking for answers to the reason for their subfertity and their child’s health.</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo3.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Phd, Santiago Munne</div>
+                  <div class="experts-slider__bottom-posit">Overture Life Inc.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="experts-slider__item"> 
+              <div class="experts-slider__icon"> 
+                <svg viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66686 8.33353C6.36953 8.33353 6.08419 8.37887 5.80019 8.4202C5.89219 8.11087 5.98686 7.7962 6.13886 7.51353C6.29086 7.10287 6.52819 6.74687 6.76419 6.3882C6.96153 6.0002 7.30953 5.73753 7.56553 5.40553C7.83353 5.08287 8.19886 4.8682 8.48819 4.6002C8.77219 4.3202 9.14419 4.1802 9.44019 3.98287C9.74953 3.80553 10.0189 3.60953 10.3069 3.5162L11.0255 3.2202L11.6575 2.95753L11.0109 0.373535L10.2149 0.565535C9.96019 0.629535 9.64953 0.704201 9.29619 0.793535C8.93486 0.860201 8.54953 1.04287 8.12019 1.20953C7.69619 1.39887 7.20553 1.52687 6.74953 1.83087C6.29086 2.12153 5.76153 2.3642 5.29486 2.75353C4.84286 3.15487 4.29753 3.50287 3.89486 4.01354C3.45486 4.49087 3.02019 4.9922 2.68286 5.56287C2.29219 6.10687 2.02686 6.7042 1.74686 7.29487C1.49353 7.88553 1.28953 8.48953 1.12286 9.0762C0.80686 10.2522 0.665527 11.3695 0.61086 12.3255C0.565527 13.2829 0.592194 14.0789 0.648194 14.6549C0.668194 14.9269 0.705527 15.1909 0.732194 15.3735L0.765527 15.5975L0.800194 15.5895C1.03734 16.6973 1.58327 17.7153 2.37481 18.5258C3.16636 19.3362 4.17118 19.9061 5.27305 20.1693C6.37491 20.4325 7.52879 20.3785 8.6012 20.0133C9.67361 19.6482 10.6207 18.9869 11.333 18.1059C12.0453 17.225 12.4936 16.1604 12.6261 15.0353C12.7586 13.9102 12.5698 12.7705 12.0817 11.7482C11.5936 10.7259 10.826 9.86269 9.86773 9.2584C8.90948 8.65411 7.79973 8.33346 6.66686 8.33353ZM21.3335 8.33353C21.0362 8.33353 20.7509 8.37887 20.4669 8.4202C20.5589 8.11087 20.6535 7.7962 20.8055 7.51353C20.9575 7.10287 21.1949 6.74687 21.4309 6.3882C21.6282 6.0002 21.9762 5.73753 22.2322 5.40553C22.5002 5.08287 22.8655 4.8682 23.1549 4.6002C23.4389 4.3202 23.8109 4.1802 24.1069 3.98287C24.4162 3.80553 24.6855 3.60953 24.9735 3.5162L25.6922 3.2202L26.3242 2.95753L25.6775 0.373535L24.8815 0.565535C24.6269 0.629535 24.3162 0.704201 23.9629 0.793535C23.6015 0.860201 23.2162 1.04287 22.7869 1.20953C22.3642 1.4002 21.8722 1.52687 21.4162 1.8322C20.9575 2.12287 20.4282 2.36553 19.9615 2.75487C19.5095 3.1562 18.9642 3.5042 18.5615 4.01354C18.1215 4.49087 17.6869 4.9922 17.3495 5.56287C16.9589 6.10687 16.6935 6.7042 16.4135 7.29487C16.1602 7.88553 15.9562 8.48953 15.7895 9.0762C15.4735 10.2522 15.3322 11.3695 15.2775 12.3255C15.2322 13.2829 15.2589 14.0789 15.3149 14.6549C15.3349 14.9269 15.3722 15.1909 15.3989 15.3735L15.4322 15.5975L15.4669 15.5895C15.704 16.6973 16.2499 17.7153 17.0415 18.5258C17.833 19.3362 18.8378 19.9061 19.9397 20.1693C21.0416 20.4325 22.1955 20.3785 23.2679 20.0133C24.3403 19.6482 25.2874 18.9869 25.9997 18.1059C26.7119 17.225 27.1603 16.1604 27.2928 15.0353C27.4252 13.9102 27.2365 12.7705 26.7484 11.7482C26.2602 10.7259 25.4926 9.86269 24.5344 9.2584C23.5761 8.65411 22.4664 8.33346 21.3335 8.33353Z" fill="#114B5F"></path>
+                </svg>
+              </div>
+              <div class="experts-slider__content content"> 
+                <p>Whole genome sequencing of IVF embryos with GenEmbryomics' Panacea GenomeScreen™ is the most advanced IVF embryo laboratory test ever developed"</p>
+              </div>
+              <div class="experts-slider__bottom"> 
+                <div class="experts-slider__photo img-wrap">
+                  <div>
+                    <picture><img src="assets/images/png/experts-slider__photo4.png" alt=""></picture>
+                  </div>
+                </div>
+                <div class="experts-slider__bottom-info"> 
+                  <div class="experts-slider__bottom-name">Dr. Nick Murphy</div>
+                  <div class="experts-slider__bottom-posit">PhD University of Melbourne</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="experts__button slider-btn desktop--hide">
+      <div class="swiper-button-prev slider-btn__prev">
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9997 0.333496C6.89967 0.333496 0.333008 6.90016 0.333008 15.0002C0.333008 23.1002 6.89967 29.6668 14.9997 29.6668C23.0997 29.6668 29.6663 23.1002 29.6663 15.0002C29.6663 6.90016 23.0997 0.333496 14.9997 0.333496ZM17.9423 10.6095C18.1852 10.358 18.3196 10.0212 18.3166 9.67163C18.3135 9.32203 18.1733 8.98762 17.9261 8.74041C17.6789 8.49319 17.3445 8.35297 16.9949 8.34993C16.6453 8.34689 16.3085 8.48129 16.057 8.72416L10.7237 14.0575C10.4737 14.3075 10.3333 14.6466 10.3333 15.0002C10.3333 15.3537 10.4737 15.6928 10.7237 15.9428L16.057 21.2762C16.3085 21.519 16.6453 21.6534 16.9949 21.6504C17.3445 21.6474 17.6789 21.5071 17.9261 21.2599C18.1733 21.0127 18.3135 20.6783 18.3166 20.3287C18.3196 19.9791 18.1852 19.6423 17.9423 19.3908L13.5517 15.0002L17.9423 10.6095Z"></path>
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next slider-btn__next">
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0003 29.6665C23.1003 29.6665 29.667 23.0998 29.667 14.9998C29.667 6.89984 23.1003 0.333171 15.0003 0.333171C6.90032 0.333172 0.333656 6.89984 0.333657 14.9998C0.333658 23.0998 6.90033 29.6665 15.0003 29.6665ZM12.0577 19.3905C11.8148 19.642 11.6804 19.9788 11.6834 20.3284C11.6865 20.678 11.8267 21.0124 12.0739 21.2596C12.3211 21.5068 12.6555 21.647 13.0051 21.6501C13.3547 21.6531 13.6915 21.5187 13.943 21.2758L19.2763 15.9425C19.5263 15.6925 19.6667 15.3534 19.6667 14.9998C19.6667 14.6463 19.5263 14.3072 19.2763 14.0572L13.943 8.72384C13.6915 8.48096 13.3547 8.34657 13.0051 8.34961C12.6555 8.35264 12.3211 8.49287 12.0739 8.74008C11.8267 8.98729 11.6865 9.32171 11.6834 9.6713C11.6804 10.0209 11.8148 10.3577 12.0577 10.6092L16.4483 14.9998L12.0577 19.3905Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="form">
+          <div class="center-wrap">
+            <div class="form__wrap at-block">
+              <div class="form__left">
+                <div class="form__subtitle">Want more information?</div>
+                <h2 class="form__simple-title simple-title at-element" data-at-name="atTitle">Please submit the form to get more<br> information about how we can be<br> helpful</h2>
+                <div class="form__content content"> 
+                  <p>Send us a message and we'll respond as soon as possible.</p>
+                </div>
+              </div>
+              <div class="form__right">
+                <form class="inputs" action="/action_page.php" autocomplete="off">
+                  <div class="inputs__field-wrap">
+                    <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+                    <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
+                  </div>
+                  <div class="inputs__field-wrap">
+                    <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+                    <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
+                  </div>
+                  <div class="inputs__field-wrap">
+                    <input class="inputs__field" type="number" autocomplete="off" required="">
+                    <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
+                  </div>
+                  <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                    <textarea class="inputs__field" name="textarea" required></textarea>
+                    <label class="inputs__label"><span class="inputs__content">Your message</span></label>
+                  </div>
+                  <div class="inputs__btn">
+                    <button class="btn" type="submit">Submit </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrap at-block">
+            <div class="contacts__left">
+              <h2 class="contacts__simple-title simple-title at-element" data-at-name="atTitle">Contact us</h2>
+              <div class="contacts__info">
+                <!-- #bag запросить иконку --><a class="contacts__info-link" href="mailto:support@genembryomics.com">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="16"></rect>
+                    <path d="M16.0002 9.2998C12.3202 9.2998 9.3335 12.2865 9.3335 15.9665C9.3335 19.6465 12.3202 22.6331 16.0002 22.6331H19.3335V21.2998H16.0002C13.1068 21.2998 10.6668 18.8598 10.6668 15.9665C10.6668 13.0731 13.1068 10.6331 16.0002 10.6331C18.8935 10.6331 21.3335 13.0731 21.3335 15.9665V16.9198C21.3335 17.4465 20.8602 17.9665 20.3335 17.9665C19.8068 17.9665 19.3335 17.4465 19.3335 16.9198V15.9665C19.3335 14.1265 17.8402 12.6331 16.0002 12.6331C14.1602 12.6331 12.6668 14.1265 12.6668 15.9665C12.6668 17.8065 14.1602 19.2998 16.0002 19.2998C16.9202 19.2998 17.7602 18.9265 18.3602 18.3198C18.7935 18.9131 19.5402 19.2998 20.3335 19.2998C21.6468 19.2998 22.6668 18.2331 22.6668 16.9198V15.9665C22.6668 12.2865 19.6802 9.2998 16.0002 9.2998ZM16.0002 17.9665C14.8935 17.9665 14.0002 17.0731 14.0002 15.9665C14.0002 14.8598 14.8935 13.9665 16.0002 13.9665C17.1068 13.9665 18.0002 14.8598 18.0002 15.9665C18.0002 17.0731 17.1068 17.9665 16.0002 17.9665Z" fill="white"></path>
+                  </svg>
+                  <p>support@genembryomics.com</p></a>
+              </div>
+            </div>
+            <div class="contacts__right img-parallax mobile--hide"><img src="assets/images/png/contacts-img.png" alt=""></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="center-wrap">
+          <div class="footer__wrap">
+            <p class="footer__copyr">© Copyright 2022</p>
+            <div class="footer__links"> <a class="footer__links-btn btn btn--empty" href="/privacy.html">Privacy policy</a><a class="footer__links-btn btn btn--empty" href="/terms.html">Terms of use</a></div>
+            <div class="footer__socials socials"><a class="socials__link" href="" target="_blank">
+                <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-45.091,392.158c113.283,0 175.224,-93.87 175.224,-175.223c0,-2.682 0,-5.364 -0.128,-7.919c12.005,-8.684 22.478,-19.54 30.779,-31.928c-10.983,4.853 -22.861,8.174 -35.377,9.706c12.772,-7.663 22.478,-19.668 27.076,-34.099c-11.878,7.024 -25.032,12.132 -39.081,14.942c-11.239,-12.005 -27.203,-19.412 -44.955,-19.412c-33.972,0 -61.558,27.586 -61.558,61.558c0,4.853 0.511,9.578 1.66,14.048c-51.213,-2.554 -96.552,-27.075 -126.947,-64.368c-5.237,9.068 -8.302,19.668 -8.302,30.907c0,21.328 10.856,40.23 27.459,51.213c-10.09,-0.255 -19.541,-3.065 -27.842,-7.662l0,0.766c0,29.885 21.2,54.661 49.425,60.409c-5.108,1.404 -10.6,2.171 -16.219,2.171c-3.96,0 -7.791,-0.383 -11.622,-1.15c7.79,24.521 30.523,42.274 57.471,42.784c-21.073,16.476 -47.637,26.31 -76.501,26.31c-4.981,0 -9.834,-0.256 -14.687,-0.894c26.948,17.624 59.387,27.841 94.125,27.841Z"></path>
+                </svg></a><a class="socials__link" href="" target="_blank">
+                <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm0,96c-43.453,0 -48.902,0.184 -65.968,0.963c-17.03,0.777 -28.661,3.482 -38.839,7.437c-10.521,4.089 -19.444,9.56 -28.339,18.455c-8.895,8.895 -14.366,17.818 -18.455,28.339c-3.955,10.177 -6.659,21.808 -7.437,38.838c-0.778,17.066 -0.962,22.515 -0.962,65.968c0,43.453 0.184,48.902 0.962,65.968c0.778,17.03 3.482,28.661 7.437,38.838c4.089,10.521 9.56,19.444 18.455,28.34c8.895,8.895 17.818,14.366 28.339,18.455c10.178,3.954 21.809,6.659 38.839,7.436c17.066,0.779 22.515,0.963 65.968,0.963c43.453,0 48.902,-0.184 65.968,-0.963c17.03,-0.777 28.661,-3.482 38.838,-7.436c10.521,-4.089 19.444,-9.56 28.34,-18.455c8.895,-8.896 14.366,-17.819 18.455,-28.34c3.954,-10.177 6.659,-21.808 7.436,-38.838c0.779,-17.066 0.963,-22.515 0.963,-65.968c0,-43.453 -0.184,-48.902 -0.963,-65.968c-0.777,-17.03 -3.482,-28.661 -7.436,-38.838c-4.089,-10.521 -9.56,-19.444 -18.455,-28.339c-8.896,-8.895 -17.819,-14.366 -28.34,-18.455c-10.177,-3.955 -21.808,-6.66 -38.838,-7.437c-17.066,-0.779 -22.515,-0.963 -65.968,-0.963Zm0,28.829c42.722,0 47.782,0.163 64.654,0.933c15.6,0.712 24.071,3.318 29.709,5.509c7.469,2.902 12.799,6.37 18.397,11.969c5.6,5.598 9.067,10.929 11.969,18.397c2.191,5.638 4.798,14.109 5.509,29.709c0.77,16.872 0.933,21.932 0.933,64.654c0,42.722 -0.163,47.782 -0.933,64.654c-0.711,15.6 -3.318,24.071 -5.509,29.709c-2.902,7.469 -6.369,12.799 -11.969,18.397c-5.598,5.6 -10.928,9.067 -18.397,11.969c-5.638,2.191 -14.109,4.798 -29.709,5.509c-16.869,0.77 -21.929,0.933 -64.654,0.933c-42.725,0 -47.784,-0.163 -64.654,-0.933c-15.6,-0.711 -24.071,-3.318 -29.709,-5.509c-7.469,-2.902 -12.799,-6.369 -18.398,-11.969c-5.599,-5.598 -9.066,-10.928 -11.968,-18.397c-2.191,-5.638 -4.798,-14.109 -5.51,-29.709c-0.77,-16.872 -0.932,-21.932 -0.932,-64.654c0,-42.722 0.162,-47.782 0.932,-64.654c0.712,-15.6 3.319,-24.071 5.51,-29.709c2.902,-7.468 6.369,-12.799 11.968,-18.397c5.599,-5.599 10.929,-9.067 18.398,-11.969c5.638,-2.191 14.109,-4.797 29.709,-5.509c16.872,-0.77 21.932,-0.933 64.654,-0.933Zm0,49.009c-45.377,0 -82.162,36.785 -82.162,82.162c0,45.377 36.785,82.162 82.162,82.162c45.377,0 82.162,-36.785 82.162,-82.162c0,-45.377 -36.785,-82.162 -82.162,-82.162Zm0,135.495c-29.455,0 -53.333,-23.878 -53.333,-53.333c0,-29.455 23.878,-53.333 53.333,-53.333c29.455,0 53.333,23.878 53.333,53.333c0,29.455 -23.878,53.333 -53.333,53.333Zm104.609,-138.741c0,10.604 -8.597,19.199 -19.201,19.199c-10.603,0 -19.199,-8.595 -19.199,-19.199c0,-10.604 8.596,-19.2 19.199,-19.2c10.604,0 19.201,8.596 19.201,19.2Z"></path>
+                </svg></a><a class="socials__link" href="" target="_blank">
+                <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M255.022,511.998l0.229,0.001l-0.079,0l-0.15,-0.001Zm1.806,0.001l-0.079,0l0.229,-0.001l-0.15,0.001Zm-2.588,-0.005l0.247,0.001l-0.142,0l-0.105,-0.001Zm3.415,0.001l-0.142,0l0.247,-0.001l-0.105,0.001Zm-4.169,-0.007l0.165,0.001l-0.132,-0.001l-0.033,0Zm4.995,0l-0.132,0.001l0.165,-0.001l-0.033,0Zm0.826,-0.009l-0.058,0.001l0.223,-0.003l-0.165,0.002Zm-6.779,-0.002l0.223,0.003l-0.058,-0.001l-0.165,-0.002Zm7.604,-0.01l-0.135,0.002l0.275,-0.004l-0.14,0.002Zm-8.404,-0.002l0.275,0.004l-0.135,-0.002l-0.14,-0.002Zm9.228,-0.012l-0.182,0.003l0.254,-0.005l-0.072,0.002Zm-9.984,-0.002l0.254,0.005l-0.182,-0.003l-0.072,-0.002Zm-0.937,-0.019l0.225,0.005l-0.04,-0.001l-0.185,-0.004Zm11.745,0.004l-0.04,0.001l0.225,-0.005l-0.185,0.004Zm-12.567,-0.025l0.309,0.008l-0.125,-0.003l-0.184,-0.005Zm13.39,0.005l-0.125,0.003l0.309,-0.008l-0.184,0.005Zm0.823,-0.022l-0.201,0.006l0.316,-0.009l-0.115,0.003Zm-14.967,-0.003l0.316,0.009l-0.201,-0.006l-0.115,-0.003Zm-0.72,-0.022l0.225,0.007l-0.212,-0.007l-0.194,-0.006l0.181,0.006Zm16.509,0l-0.212,0.007l0.225,-0.007l0.181,-0.006l-0.194,0.006Zm0.821,-0.027l-0.112,0.004l0.345,-0.012l-0.233,0.008Zm-18.371,-0.008l0.345,0.012l-0.112,-0.004l-0.233,-0.008Zm-0.749,-0.028l0.362,0.013l-0.201,-0.007l-0.161,-0.006Zm19.941,0.006l-0.201,0.007l0.362,-0.013l-0.161,0.006Zm-20.676,-0.036l0.354,0.015l-0.277,-0.011l-0.077,-0.004Zm21.495,0.004l-0.277,0.011l0.354,-0.015l-0.077,0.004Zm-22.525,-0.049l0.38,0.017l-0.093,-0.003l-0.287,-0.014Zm23.345,0.014l-0.093,0.003l0.38,-0.017l-0.287,0.014Zm-24.084,-0.048l0.394,0.018l-0.186,-0.008l-0.208,-0.01Zm24.902,0.01l-0.186,0.008l0.394,-0.018l-0.208,0.01Zm-25.63,-0.047l0.397,0.02l-0.279,-0.013l-0.118,-0.007Zm26.448,0.007l-0.279,0.013l0.397,-0.02l-0.118,0.007Zm0.818,-0.043l-0.362,0.019l0.321,-0.017l0.378,-0.021l-0.337,0.019Zm-27.925,0.002l0.321,0.017l-0.362,-0.019l-0.337,-0.019l0.378,0.021Zm28.741,-0.048l-0.16,0.009l0.406,-0.023l-0.246,0.014Zm-29.844,-0.014l0.406,0.023l-0.16,-0.009l-0.246,-0.014Zm-0.722,-0.043l0.405,0.024l-0.253,-0.014l-0.152,-0.01Zm31.382,0.01l-0.253,0.014l0.405,-0.024l-0.152,0.01Zm-32.071,-0.053l0.365,0.023l-0.34,-0.021l-0.342,-0.022l0.317,0.02Zm32.887,0.002l-0.34,0.021l0.365,-0.023l0.317,-0.02l-0.342,0.022Zm0.814,-0.053l-0.122,0.008l0.387,-0.026l-0.265,0.018Zm-34.755,-0.018l0.387,0.026l-0.122,-0.008l-0.265,-0.018Zm-0.721,-0.05l0.38,0.027l-0.208,-0.014l-0.172,-0.013Zm36.29,0.013l-0.208,0.014l0.38,-0.027l-0.172,0.013Zm-37.009,-0.064l0.349,0.025l-0.271,-0.019l-0.078,-0.006Zm37.822,0.006l-0.271,0.019l0.349,-0.025l-0.078,0.006Zm-38.789,-0.079l0.306,0.023l-0.074,-0.005l-0.232,-0.018Zm39.602,0.018l-0.074,0.005l0.306,-0.023l-0.232,0.018Zm0.811,-0.063l-0.146,0.011l0.311,-0.025l-0.165,0.014Zm-41.157,-0.014l0.311,0.025l-0.146,-0.011l-0.165,-0.014Zm-0.725,-0.059l0.264,0.022l-0.186,-0.015l-0.078,-0.007Zm42.694,0.007l-0.186,0.015l0.264,-0.022l-0.078,0.007Zm-43.492,-0.074l0.079,0.007l-0.013,-0.001l-0.066,-0.006Zm44.302,0.006l-0.013,0.001l0.079,-0.007l-0.066,0.006Zm0.81,-0.071l-0.072,0.006l0.181,-0.016l-0.109,0.01Zm-45.965,-0.01l0.181,0.016l-0.072,-0.006l-0.109,-0.01Zm-0.75,-0.068l0.135,0.013l-0.084,-0.008l-0.051,-0.005Zm47.523,0.005l-0.084,0.008l0.135,-0.013l-0.051,0.005Zm-63.736,-2.025c-122.319,-19.226 -216,-125.203 -216,-252.887c0,-141.29 114.71,-256 256,-256c141.29,0 256,114.71 256,256c0,127.684 -93.681,233.661 -216,252.887l0,-178.887l59.65,0l11.35,-74l-71,0l0,-48.021c0,-20.245 9.918,-39.979 41.719,-39.979l32.281,0l0,-63c0,0 -29.296,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.887Z"></path>
+                </svg></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+<div class="cookie" style="visibility:hidden;">
+  <div class="cookie__content content"> 
+    <p>We use cookies to improve user experience</p>
+  </div>
+  <div class="cookie__btn btn btn--empty">Accept cookies</div>
+</div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__left">
+      <div class="mobile-menu__act mobile-menu__act--close">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="7" width="22" height="20" fill="white"></rect>
+          <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z" fill="#F45B69"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="mobile-menu__right">
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Test</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Team</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Blog</a></li>
+          <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Contact us</a></li>
+        </ul>
+      </nav><a class="btn" href="http://genembryomics.elisedge.com/patient/" target="_blank">Order test</a>
+      <div class="mobile-menu__bottom"><a class="btn btn--emptya" href="https://genembryomics.elisedge.com/elis/portal" target="_blank">Portal</a>
+        <div class="header__lang"><a class="header__lang-item header__lang-item--active" href="">EN</a><a class="header__lang-item" href="">EN</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="callback">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('callback')">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="7" y="7" width="22" height="20" fill="white"></rect>
+        <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z"></path>
+      </svg>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Callback form</div>
+      <form class="inputs" action="/action_page.php" autocomplete="off">
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+          <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
+        </div>
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+          <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
+        </div>
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="number" autocomplete="off" required="">
+          <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
+        </div>
+        <div class="inputs__field-wrap inputs__field-wrap--textarea inputs__field-wrap--top">
+          <textarea class="inputs__field" name="textarea" required></textarea>
+          <label class="inputs__label"><span class="inputs__content">Type in your comments...</span></label>
+        </div>
+        <div class="inputs__btn">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="submit">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('submit')">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="7" y="7" width="22" height="20" fill="white"></rect>
+        <path d="M18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0ZM18 15.8169L13.8189 11.6357C13.5294 11.3462 13.1367 11.1836 12.7273 11.1836C12.3179 11.1836 11.9252 11.3462 11.6357 11.6357C11.3462 11.9252 11.1836 12.3179 11.1836 12.7273C11.1836 13.1367 11.3462 13.5294 11.6357 13.8189L15.8169 18L11.6357 22.1811C11.4924 22.3245 11.3787 22.4947 11.3011 22.682C11.2235 22.8693 11.1836 23.07 11.1836 23.2727C11.1836 23.4754 11.2235 23.6762 11.3011 23.8635C11.3787 24.0508 11.4924 24.2209 11.6357 24.3643C11.7791 24.5076 11.9492 24.6213 12.1365 24.6989C12.3238 24.7765 12.5246 24.8164 12.7273 24.8164C12.93 24.8164 13.1307 24.7765 13.318 24.6989C13.5053 24.6213 13.6755 24.5076 13.8189 24.3643L18 20.1831L22.1811 24.3643C22.3245 24.5076 22.4947 24.6213 22.682 24.6989C22.8693 24.7765 23.07 24.8164 23.2727 24.8164C23.4754 24.8164 23.6762 24.7765 23.8635 24.6989C24.0508 24.6213 24.2209 24.5076 24.3643 24.3643C24.5076 24.2209 24.6213 24.0508 24.6989 23.8635C24.7765 23.6762 24.8164 23.4754 24.8164 23.2727C24.8164 23.07 24.7765 22.8693 24.6989 22.682C24.6213 22.4947 24.5076 22.3245 24.3643 22.1811L20.1831 18L24.3643 13.8189C24.5076 13.6755 24.6213 13.5053 24.6989 13.318C24.7765 13.1307 24.8164 12.93 24.8164 12.7273C24.8164 12.5246 24.7765 12.3238 24.6989 12.1365C24.6213 11.9492 24.5076 11.7791 24.3643 11.6357C24.2209 11.4924 24.0508 11.3787 23.8635 11.3011C23.6762 11.2235 23.4754 11.1836 23.2727 11.1836C23.07 11.1836 22.8693 11.2235 22.682 11.3011C22.4947 11.3787 22.3245 11.4924 22.1811 11.6357L18 15.8169Z"></path>
+      </svg>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title popup__simple-title--mb simple-title">Please submit the form to order your IVF embryo genome screening test</div>
+      <form class="inputs" action="/action_page.php" autocomplete="off">
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="text" name="text" autocomplete="off" required="" minlength="2">
+          <label class="inputs__label"><span class="inputs__content">Enter your name</span></label>
+        </div>
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="email" name="email" autocomplete="off" required="">
+          <label class="inputs__label"><span class="inputs__content">Enter your email</span></label>
+        </div>
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="number" autocomplete="off" required="">
+          <label class="inputs__label"><span class="inputs__content">Enter your phone number</span></label>
+        </div>
+        <div class="popup__bottom">
+          <div class="popup__price"> 
+            <div class="popup__price-new">500$</div>
+            <div class="popup__price-old desktop--hide">700$</div>
+          </div>
+          <div class="inputs__btn">
+            <button class="btn" type="submit">Order test</button>
+          </div>
+        </div>
+        <div class="popup__content content"> 
+          <p>Our staff will contact you as soon as possible to provide you with all needed information.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1657270575210"></script></body>
+</html>
